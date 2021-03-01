@@ -1,13 +1,17 @@
 ## Codes for CPL attacks
 
-This is the prototype code for ESORICS 2020 A Framework for Evaluating Gradient Leakage Attacks in Federated Learning.
+This is the prototype code for ESORICS 2020 A Framework for Evaluating Gradient Leakage Attacks in Federated Learning. The talk can be found here:  <a href="https://www.youtube.com/watch?v=BNGpv4AW80g" target="_blank">talk</a>.
 
 
 ### Here is a brief description of each file.
 LFW_Deep_Leakage_from_Gradients.ipynb: lfw implementation for DLG attack in (NIPS2019) "Deep leakage from gradients."
+
 LFW_enhanced_random_ASR.ipynb: CPL attack with geometric initialization
+
 LFW_batch.ipynb: CPL attack in batch
+
 LFW128_enhanced_random_ASR.ipynb: CPL attack with resolution 128*128. Same applies to LFW64_enhanced_random_ASR.ipynb
+
 LFW_defense.ipynb: CPL attack under high-pass filter and additive noise
 
 
