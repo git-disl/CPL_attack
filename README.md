@@ -4,7 +4,7 @@ This is the prototype code for ESORICS 2020 A Framework for Evaluating Gradient 
 
 ### Examples
 
-|  | CPL | DLG |
+|  | ours | DLG |
 |:---:|:---:|:---:|
 | MNIST| ![mnist_ours](demo/mnist_ours.gif) | ![mnist_dlg](demo/mnist_dlg.gif) |
 | CIFAR10| ![cifar10_ours](demo/cifar10_ours.gif) | ![cifar10_dlg](demo/cifar10_dlg.gif) |
