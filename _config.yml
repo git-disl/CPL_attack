@@ -1,5 +1,8 @@
-theme: jekyll-theme-cayman
-
 title: "A Framework for Evaluating Client Privacy Leakages in Federated Learning"
 description: Wenqi Wei, Ling Liu, Margaret Loper, Ka-Ho Chow, Mehmet Emre Gursoy, Stacey Truex, and Yanzhao Wu.
 header: CPL attack
+
+
+theme: jekyll-theme-cayman
+
+
