@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## Codes for CPL attacks
 
-You can use the [editor on GitHub](https://github.com/git-disl/ESORICS20-CPL/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is the prototype code for ESORICS 2020 A Framework for Evaluating Gradient Leakage Attacks in Federated Learning. The talk can be found here:  <a href="https://www.youtube.com/watch?v=BNGpv4AW80g" target="_blank">talk</a>.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Examples
 
-### Markdown
+|  | ours | DLG |
+|:---:|:---:|:---:|
+| MNIST| ![mnist_ours](demo/mnist_ours.gif) | ![mnist_dlg](demo/mnist_dlg.gif) |
+| CIFAR10| ![cifar10_ours](demo/cifar10_ours.gif) | ![cifar10_dlg](demo/cifar10_dlg.gif) |
+| LFW| ![lfw_ours](demo/lfw_ours.gif) | ![lfw_dlg](demo/lfw_dlg.gif) |
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### Here is a brief description of each file.
+LFW_Deep_Leakage_from_Gradients.ipynb: lfw implementation for DLG attack in (NIPS2019) "Deep leakage from gradients."
 
-**Bold** and _Italic_ and `Code` text
+LFW_enhanced_random_ASR.ipynb: CPL attack with geometric initialization
 
-[Link](url) and ![Image](src)
+LFW_batch.ipynb: CPL attack in batch
+
+LFW128_enhanced_random_ASR.ipynb: CPL attack with resolution 128*128. Same applies to LFW64_enhanced_random_ASR.ipynb
+
+LFW_defense.ipynb: CPL attack under high-pass filter and additive noise
+
+
+
+If you use our code, please cite:
+
 ```
+Wei, Wenqi, Ling Liu, Margaret Loper, Ka-Ho Chow, Mehmet Emre Gursoy, Stacey Truex, and Yanzhao Wu. "A Framework for Evaluating Client Privacy Leakages in Federated Learning." In European Symposium on Research in Computer Security, pp. 545-566. Springer, Cham, 2020.
+...
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/git-disl/ESORICS20-CPL/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
