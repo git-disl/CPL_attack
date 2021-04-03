@@ -30,11 +30,6 @@ LFW_defense.ipynb: CPL attack under high-pass filter and additive noise
 If you use our code, please cite:
 
 ```
-@article{wei2020framework,
-  title={A Framework for Evaluating Gradient Leakage Attacks in Federated Learning},
-  author={Wei, Wenqi and Liu, Ling and Loper, Margaret and Chow, Ka-Ho and Gursoy, Mehmet Emre and Truex, Stacey and Wu, Yanzhao},
-  journal={arXiv preprint arXiv:2004.10397},
-  year={2020}
-}
+Wei, Wenqi, Ling Liu, Margaret Loper, Ka-Ho Chow, Mehmet Emre Gursoy, Stacey Truex, and Yanzhao Wu. "A Framework for Evaluating Client Privacy Leakages in Federated Learning." In European Symposium on Research in Computer Security, pp. 545-566. Springer, Cham, 2020.
 ...
 
