@@ -1,6 +1,6 @@
 ## Codes for CPL attacks
 
-This is the prototype code for ESORICS 2020 A Framework for Evaluating Gradient Leakage Attacks in Federated Learning. The talk can be found here:  <a href="https://www.youtube.com/watch?v=BNGpv4AW80g" target="_blank">talk</a>.
+This is the prototype code for ESORICS 2020 A Framework for Evaluating Gradient Leakage Attacks in Federated Learning. The talk can be found here:  <a href="https://www.youtube.com/watch?v=BNGpv4AW80g" target="_blank">talk</a>. Check out the [project page](https://wenqiwei789.github.io/ESORICS20-CPL/)
 
 ### Examples
 
