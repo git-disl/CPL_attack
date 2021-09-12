@@ -14,8 +14,7 @@ This is the prototype code for ESORICS 2020 A Framework for Evaluating Gradient 
 
 
 
-### Here is a brief description of each file.
-LFW_Deep_Leakage_from_Gradients.ipynb: lfw implementation for DLG attack in (NIPS2019) "Deep leakage from gradients."
+### Here is a brief description of each file in the CPL folder.
 
 LFW_enhanced_random_ASR.ipynb: CPL attack with geometric initialization
 
@@ -24,6 +23,16 @@ LFW_batch.ipynb: CPL attack in batch
 LFW128_enhanced_random_ASR.ipynb: CPL attack with resolution 128*128. Same applies to LFW64_enhanced_random_ASR.ipynb
 
 LFW_defense.ipynb: CPL attack under high-pass filter and additive noise
+
+
+### Here is a brief description of each file in the DLG folder.
+
+LFW_Deep_Leakage_from_Gradients.ipynb: lfw implementation for DLG attack in (NIPS2019) "Deep leakage from gradients."
+
+### Here is a brief description of each file in the GradInversting folder.
+
+Attack from NeurIPS 2020: Geiping, Jonas, Hartmut Bauermeister, Hannah Dröge, and Michael Moeller. "Inverting Gradients--How easy is it to break privacy in federated learning?." 
+To run, you may find more details [here](https://github.com/JonasGeiping/invertinggradients)
 
 
 
