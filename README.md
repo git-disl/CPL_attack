@@ -8,7 +8,7 @@ There are a few unique properties of CPL:
 - CPL attack can handle batch size up to 8 to attack the entire batch as a whole when there is, unlike DLG and GradInverting attack which can only attack single-input gradient in a batch one by one. More details can be found <strong>./CPL/LFW_batch.ipynb</strong> 
 - CPL attack can work on Tanh and LeakyReLU in addition to Sigmoid, while existing approaches are studied only on Sigmoid. <strong> ./CPL/LFW_tanhrelu.ipynb</strong>
 - We also provde initial solutions including gradien compression and additive Gaussian and Laplacian noise. See <strong> ./CPL/LFW_defense.ipynb</strong> for more details and tuning.
-- To systematically defend the attack, federated learning with client-side differential privacy noise is proposed. See [code](https://github.com/git-disl/Fed-CDP).
+- To systematically defend the attack, federated learning with client-side differential privacy noise is proposed. See [code](https://github.com/git-disl/Fed-CDP) for gradient leakage resilient federated learning.
 
 
 ### Examples
