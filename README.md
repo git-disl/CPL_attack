@@ -1,6 +1,13 @@
 ## Codes for CPL attacks
 
-This is the prototype code for ESORICS 2020 A Framework for Evaluating Gradient Leakage Attacks in Federated Learning. The talk can be found here:  <a href="https://www.youtube.com/watch?v=BNGpv4AW80g" target="_blank">talk</a>. Check out our [project page](https://git-disl.github.io/ESORICS20-CPL/)
+Client Privacy Leakage, or CPL is an advanced privacy leakage attack in federated learning which utilize the stolen gradient either during client's local training nor after the local training. The attack is an iterative process: 
+
+There are a few unique properties of CPL:
+- with geometric initilaizations like pattened seed or single-color seed, CPL attack is much faster than the SOTA DLG and GradInverting attack in terms of attack iterations, and better reconstruction quality in terms of both attack success rate and image quality. Besides the geometric initilization seed, CPL attack integrates the label attack given the fact the gradients on the training label class have the largest value so that the content attack is accerlerated compared to DLG. Detailed implementations can be found in ./CPL/LFW_enhanced_random_ASR.ipynb
+- CPL attack can handle images larger than 64*64, which DLG claims impossbile to reconstruct from gradient. More details can be found in ./CPL/LFW128_enhanced_random_ASR.ipynb. The 64*64 setting is also provided as in LFW64_enhanced_random_ASR.ipynb.
+- CPL attack can handle batch size up to 8 to attack the entire batch as a whole when there is, unlike DLG and GradInverting attack which can only attack single-input gradient in a batch one by one. More details can be found ./CPL/LFW_batch.ipynb
+- We also provde initial solutions including gradien compression and additive Gaussian and Laplacian noise. See ./CLP/LFW_defense.ipynb for more details and tuning.
+
 
 ### Examples
 
@@ -12,19 +19,6 @@ This is the prototype code for ESORICS 2020 A Framework for Evaluating Gradient 
 
 
 
-
-
-### Here is a brief description of each file in the CPL folder.
-
-LFW_enhanced_random_ASR.ipynb: CPL attack with geometric initialization
-
-LFW_batch.ipynb: CPL attack in batch
-
-LFW128_enhanced_random_ASR.ipynb: CPL attack with resolution 128*128. Same applies to LFW64_enhanced_random_ASR.ipynb
-
-LFW_defense.ipynb: CPL attack under high-pass filter and additive noise
-
-
 ### Here is a brief description of each file in the DLG folder.
 
 LFW_Deep_Leakage_from_Gradients.ipynb: lfw implementation for DLG attack in (NIPS2019) "Deep leakage from gradients."
@@ -34,6 +28,8 @@ LFW_Deep_Leakage_from_Gradients.ipynb: lfw implementation for DLG attack in (NIP
 Attack from NeurIPS 2020: Geiping, Jonas, Hartmut Bauermeister, Hannah Dröge, and Michael Moeller. "Inverting Gradients--How easy is it to break privacy in federated learning?." 
 To run, you may find more details [here](https://github.com/JonasGeiping/invertinggradients)
 
+
+This is the prototype code for ESORICS 2020 A Framework for Evaluating Gradient Leakage Attacks in Federated Learning. The talk can be found here:  <a href="https://www.youtube.com/watch?v=BNGpv4AW80g" target="_blank">talk</a>. Check out our [project page](https://git-disl.github.io/ESORICS20-CPL/)
 
 
 If you use our code, please cite:
